@@ -1,0 +1,157 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Encabezado y navegación */
+  header {
+    background-color: #0078d7;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  header h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Secciones principales */
+  main {
+    padding: 2rem;
+  }
+  
+  section {
+    background: white;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  section h2 {
+    color: #0078d7;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  section p {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+  
+  /* Formularios */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin-top: 0.5rem;
+    font-weight: bold;
+  }
+  
+  form input, form textarea, form button {
+    margin-top: 0.3rem;
+    padding: 0.7rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #0078d7;
+    box-shadow: 0 0 4px rgba(0, 120, 215, 0.5);
+  }
+  
+  form button {
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #005bb5;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Efectos de transición */
+  a {
+    transition: color 0.3s ease;
+  }
+  
+  button {
+    transition: transform 0.2s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav ul li {
+      margin: 0.5rem 0;
+    }
+  
+    section {
+      padding: 1rem;
+    }
+  
+    form input, form textarea, form button {
+      font-size: 0.9rem;
+    }
+  }
+  
